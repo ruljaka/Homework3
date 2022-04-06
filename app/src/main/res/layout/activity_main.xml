@@ -4,15 +4,296 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CDCDCD"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/ll_austria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/ll_poland"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#ED2A39" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#ED2A39" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_austria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_austria"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_austria"
+        app:layout_constraintStart_toStartOf="@+id/ll_austria"
+        app:layout_constraintTop_toBottomOf="@+id/ll_austria" />
+
+    <LinearLayout
+        android:id="@+id/ll_poland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ll_austria"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#FFFFFF" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#DD0C39" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_poland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_poland"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_poland"
+        app:layout_constraintStart_toStartOf="@+id/ll_poland"
+        app:layout_constraintTop_toBottomOf="@+id/ll_poland" />
+
+    <LinearLayout
+        android:id="@+id/ll_italy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/ll_columbia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_austria">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:background="#018D44" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:background="#C82B36" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_italy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_italy"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_italy"
+        app:layout_constraintStart_toStartOf="@+id/ll_italy"
+        app:layout_constraintTop_toBottomOf="@+id/ll_italy" />
+
+    <LinearLayout
+        android:id="@+id/ll_columbia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ll_italy"
+        app:layout_constraintTop_toBottomOf="@+id/tv_poland">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#FFCE02" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:background="#002D88" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:background="#CA072A" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_columbia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_columbia"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_poland"
+        app:layout_constraintStart_toStartOf="@+id/ll_poland"
+        app:layout_constraintTop_toBottomOf="@+id/ll_columbia" />
+
+    <LinearLayout
+        android:id="@+id/ll_madagascar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/ll_thailand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_italy">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#FC3B2F" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#007F38" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_madagascar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_madagascar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_madagascar"
+        app:layout_constraintStart_toStartOf="@+id/ll_madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/ll_madagascar" />
+
+    <LinearLayout
+        android:id="@+id/ll_thailand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_columbia">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:background="#A6132E" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:background="#F5F6F8" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#292649" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:background="#F5F6F8" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:background="#A6132E" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_thailand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_thailand"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ll_thailand"
+        app:layout_constraintStart_toStartOf="@+id/ll_thailand"
+        app:layout_constraintTop_toBottomOf="@+id/ll_thailand" />
+
+    <ImageView
+        android:id="@+id/iv_denmark"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/tv_denmark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flag_of_denmark"
+        app:layout_constraintEnd_toEndOf="@+id/ll_madagascar"
+        app:layout_constraintStart_toStartOf="@+id/ll_madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_madagascar" />
+
+    <TextView
+        android:id="@+id/tv_denmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_denmark"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/iv_denmark"
+        app:layout_constraintStart_toStartOf="@+id/iv_denmark"
+        app:layout_constraintTop_toBottomOf="@+id/iv_denmark" />
+
+    <ImageView
+        android:id="@+id/iv_swiss"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/tv_swiss"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flag_of_switzerland_svg"
+        app:layout_constraintEnd_toEndOf="@+id/ll_thailand"
+        app:layout_constraintStart_toStartOf="@+id/ll_thailand"
+        app:layout_constraintTop_toBottomOf="@+id/tv_thailand" />
+
+    <TextView
+        android:id="@+id/tv_swiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/tv_swiss"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/iv_swiss"
+        app:layout_constraintStart_toStartOf="@+id/iv_swiss"
+        app:layout_constraintTop_toBottomOf="@+id/iv_swiss" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
