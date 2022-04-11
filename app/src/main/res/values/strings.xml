@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Homework3</string>
+    <string name="tv_austria">Австрия</string>
+    <string name="tv_poland">Польша</string>
+    <string name="tv_italy">Италия</string>
+    <string name="tv_columbia">Колумбия</string>
+    <string name="tv_madagascar">Мадагаскар</string>
+    <string name="tv_thailand">Тайланд</string>
+    <string name="tv_denmark">Дания</string>
+    <string name="tv_swiss">Швейцария</string>
 </resources>
